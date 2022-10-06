@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="/css/main.css" />
+		<title>Exam || Ochilov Akrom</title>
+	</head>
+	<body>
+		<img
+			class="loading position-absolute"
+			src="./images/loading.svg"
+			alt="loading"
+		/>
+		<!-- MODAL -->
+		<div class="modal" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Pop Message</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<p>
+							If you want to catch up with news, then join us
+							faster...
+						</p>
+						<a href="https://github.com/akbarjondev" target="_blank"
+							>Gooooo</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container pt-3">
+			<ul class="nav nav-pills nav-fill mb-4">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#"
+						>Active</a
+					>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Much longer nav link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled">Disabled</a>
+				</li>
+				<li class="currency-nav nav-item">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="32"
+						height="32"
+						fill="currentColor"
+						class="bi bi-cart3 bg-warning p-1 rounded-2"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+						/>
+					</svg>
+					<p class="currency-counter"></p>
+				</li>
+			</ul>
+
+			<!-- FORM -->
+			<form class="form d-flex justify-content-between mb-4" id="form">
+				<select
+					class="form-select w-50 ms-3 me-3"
+					aria-label="Default select example"
+				>
+					<option selected disabled>Select sort type</option>
+					<option value="initial">Initial</option>
+					<option value="high-low">High to low</option>
+					<option value="low-high">Low to high</option>
+				</select>
+				<input
+					type="text"
+					class="form-control w-50 ms-3 me-3"
+					placeholder="Minimal number for filter"
+				/>
+			</form>
+			<!-- Table -->
+
+			<table class="table">
+				<thead>
+					<tr class="text-center">
+						<th scope="col">Currency code</th>
+						<th scope="col">Currency name</th>
+						<th scope="col">Letter code</th>
+						<th scope="col">Value in sum</th>
+						<th scope="col">Last updated</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+
+			<!-- Template -->
+			<template id="template">
+				<tr class="text-center">
+					<th class="currency-code" scope="row">1</th>
+					<td class="currency-name">Yaponiya iyenasi</td>
+					<td class="currency-lcode">JPY</td>
+					<td class="currency-value">74.5</td>
+					<td class="currency-update">5.10.2022</td>
+					<td class="currency-status">
+						<button class="currency-badge btn">+</button>
+					</td>
+				</tr>
+			</template>
+			<!-- Template end -->
+		</div>
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
