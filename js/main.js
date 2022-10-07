@@ -120,7 +120,7 @@ tableBody.addEventListener('click', (evt) => {
 	if (elStatus.classList.contains('bg-change')) {
 		// push id of elStatus
 		badge.push(elStatus.dataset.id);
-	} else if (!elStatus.classList.contains('bg-change')) {
+	} else {
 		// removing elStatus
 		let index = badge.indexOf(elStatus.dataset.id);
 		badge.splice(index, 1);
