@@ -1,4 +1,27 @@
 {
+  "name": "exam",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkromOchilov/practise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkromOchilov/practise/issues"
+  },
+  "homepage": "https://github.com/AkromOchilov/practise#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
   "dependencies": {
     "bootstrap": "^5.2.2"
   }
